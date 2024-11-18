@@ -1,0 +1,97 @@
+/* Shared button styles */
+.button {
+  width: 285px;
+  height: 75px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+/* Button1 variant styles */
+.button.button1 {
+  background-color: #f2e6d0; /* Default Fill */
+}
+
+.button.button1.hovered {
+  background-color: #ffca61; /* Hover Fill */
+  border-color: #ffca61; /* Border to match hover fill */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.button-text.button1 {
+  color: #60340b; /* Text Fill */
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none; /* No underline */
+}
+
+/* Button2 variant styles */
+.button.button2 {
+  background-color: #ffca61; /* Default Fill */
+}
+
+.button.button2.hovered {
+  background-color: #f2e6d0; /* Hover Fill */
+  border-color: #f2e6d0; /* Border to match hover fill */
+  text-decoration: underline; /* Underline */
+}
+
+.button-text.button2 {
+  color: #60340b; /* Text Fill */
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* menu-button variant styles */
+.button.menu-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid transparent; /* No border by default */
+}
+
+.button-text.menu-button {
+  color: #60340b; /* Text Fill */
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none; /* No underline by default */
+  transition: all 0.2s ease-in;
+}
+
+.button.menu-button.hovered .button-text {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* email-button variant styles */
+.button.email-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid #775D3E; /* Outline color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.button-text.email-button {
+  color: #775D3E; /* Text color */
+  font-family: 'Inter', sans-serif;
+  font-size: 24px; /* Font size */
+  font-weight: bold;
+  text-decoration: none; /* No underline */
+  transition: all 0.2s ease-in;
+}
+
+.button.email-button.hovered {
+  background-color: #775D3E; /* Fill color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.button.email-button.hovered .button-text {
+  color: #F2E6D0; /* Text color on hover */
+}

@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Hey Louie";
+  src: url("./assets/font/HEY\ LOUIE.otf") format("opentype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/font/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-style: normal; /* Ensure it's explicitly normal */
+  font-weight: 100 900; /* Variable font weight range */
+}
+
+@font-face {
+  font-family: 'Inter Italic';
+  src: url('./assets/font/Inter/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 100 900;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-family: 'Hey Louie', sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
 }
