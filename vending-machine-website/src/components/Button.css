@@ -95,3 +95,83 @@
 .button.email-button.hovered .button-text {
   color: #F2E6D0; /* Text color on hover */
 }
+
+/* sign-up-button variant styles */
+.button.sign-up-button {
+  background-color: #775D3E; /* Fill color */
+  border: 2px solid #775D3E; /* Border color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.button-text.sign-up-button {
+  color: #F2E6D0; /* Text color */
+  font-family: 'Inter', sans-serif;
+  font-size: 24px; /* Font size */
+  font-weight: bold;
+  text-decoration: none; /* No underline */
+  transition: all 0.2s ease-in;
+}
+
+.button.sign-up-button.hovered {
+  background-color: transparent; /* Transparent background on hover */
+  border-color: #775D3E; /* Retain border color */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.button.sign-up-button.hovered .button-text {
+  color: #775D3E; /* Text color changes on hover */
+}
+
+
+
+/* Ignore below, this is for button reference page to quick display */
+/* Specific styles for the Button Reference Page */
+.button-ref-page {
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.button-group p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Code snippet styling */
+.code-snippet {
+  background-color: #f0f0f0; /* Light gray background for contrast */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 4px;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+  font-size: 12px; /* Small font size for readability */
+  color: #333; /* Dark text color */
+  white-space: pre-wrap; /* Allow wrapping for long text */
+  word-break: break-word; /* Break long words if necessary */
+  overflow: auto; /* Enable scrolling for overflow content */
+  max-width: 100%; /* Ensure it fits within the container */
+}

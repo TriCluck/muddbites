@@ -16,22 +16,79 @@
   font-style: italic;
   font-weight: 100 900;
 }
-
+/* Base Styles */
 body {
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* H1 Style */
 h1 {
   font-family: 'Hey Louie', sans-serif;
+  font-size: 78px;
   font-weight: bold;
+  color: #F2B56B; /* Bold color */
+  margin: 0;
+  padding: 0;
 }
 
+/* H2 Style */
 h2 {
   font-family: 'Inter', sans-serif;
+  font-size: 48px;
   font-weight: bold;
+  text-decoration: underline; /* Underline by default */
+  color: #60340B;
+  margin: 0;
+  padding: 0;
 }
 
+/* Alternate H2 Version */
+h2.alt {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-decoration: none; /* No underline */
+  color: #F2E6D0;
+  margin: 0;
+  padding: 0;
+}
+
+/* H3 Style */
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #F2B56B;
+  margin: 0;
+  padding: 0;
+}
+
+/* H4 Style */
+h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #60340B;
+  margin: 0;
+  padding: 0;
+}
+
+/* Alternate h4 style */
+h4.alt {
+  font-family: 'Inter', sans-serif; /* Use Inter for the alternate version */
+  font-size: 24px; 
+  font-weight: bold; /* Not bold */
+  color: #F2E6D0; /* Alternate color */
+}
+
+/* Normal Paragraph Text */
 p {
   font-family: 'Inter', sans-serif;
-  font-weight: normal;
+  font-size: 22px;
+  font-weight: normal; /* Not bold */
+  color: #60340B;
+  margin: 0;
+  padding: 0;
 }
