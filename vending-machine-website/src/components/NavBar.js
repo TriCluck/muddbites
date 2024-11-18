@@ -72,7 +72,7 @@ const NavBar = () => {
 
         {/* Group 2: Sign-up */}
         <div className='signup-link'>
-          <Button text='sign up' variant='menu-button' />
+          <Button text='sign up' variant='menu-button' onClick={handleSignupClick} />
         </div>
       </div>
     </nav>
