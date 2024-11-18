@@ -1,0 +1,13 @@
+.home-page {
+  width: 100vw;
+  height: 500vh; /* Full height of the viewport */
+
+  background-image: url('../assets/background.svg'); /* Path to the SVG */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content-wrapper {
+  z-index: 1; /* Ensures the text stays on top of the background */
+  text-align: center; /* Centers the text horizontally */
+}
