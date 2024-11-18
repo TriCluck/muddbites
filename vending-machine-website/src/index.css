@@ -82,6 +82,15 @@ h4.alt {
   font-weight: bold; /* Not bold */
   color: #F2E6D0; /* Alternate color */
 }
+/* H4 Style */
+h5 {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #60340B;
+  margin: 0;
+  padding: 0;
+}
 
 /* Normal Paragraph Text */
 p {

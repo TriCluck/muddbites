@@ -1,0 +1,27 @@
+/* Footer container */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F1E2; /* Footer background color */
+  padding: 40px 20px; /* Spacing around the footer */
+  text-align: center;
+}
+
+/* Footer headings container */
+.footer-headings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px; /* Add spacing AFTER the two headings */
+}
+
+/* Footer buttons container */
+.footer-buttons {
+  display: flex;
+  gap: 20px; /* Spacing between buttons */
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}

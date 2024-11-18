@@ -1,25 +1,31 @@
 .text-box {
-    border: 2px solid #775D3E; /* Stroke color */
-    background-color: #F9F1E2; /* Fill color */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    border-radius: 8px; /* Optional for rounded corners */
-    overflow: hidden; /* Prevent overflow */
-  }
-  
-  .text-box-input {
-    width: calc(100% - 20px); /* Leave padding space */
-    height: 90%; /* Adjust height to fit within the container */
-    border: none; /* Remove default input border */
-    background-color: transparent; /* Transparent to match the container */
-    font-size: 24px; /* Text size */
-    color: #775D3E; /* Text color */
-    font-family: 'Inter', sans-serif;
-    outline: none; /* Remove blue outline on focus */
-    text-align: center; /* Center align text */
-    padding: 5px 10px; /* Padding inside the input box */
-    box-sizing: border-box;
-  }
-  
+  border: 2px solid #775d3e; /* Stroke color */
+  background-color: #f9f1e2; /* Fill color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 8px; /* Optional for rounded corners */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.text-box-input {
+  width: calc(100% - 20px); /* Leave padding space */
+  height: 90%; /* Adjust height to fit within the container */
+  border: none; /* Remove default input border */
+  background-color: transparent; /* Transparent to match the container */
+  font-size: 20px; /* Text size */
+  color: #60340b; /* Text color */
+  font-family: 'Inter', sans-serif;
+  outline: none; /* Remove blue outline on focus */
+  text-align: center; /* Center align text */
+  padding: 5px 10px; /* Padding inside the input box */
+  box-sizing: border-box;
+}
+
+/* Placeholder styling */
+.text-box-input::placeholder {
+  color: #775d3e; /* Correct color for the placeholder text */
+  font-style: bold; /* Optional: italicized placeholder */
+  font-size: 16px; /* Match placeholder font size to design */
+}

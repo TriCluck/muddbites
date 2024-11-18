@@ -1,7 +1,5 @@
 /* Shared button styles */
 .button {
-  width: 285px;
-  height: 75px;
   border-radius: 10px;
   border: 2px solid transparent;
   display: flex;
@@ -14,6 +12,8 @@
 /* Button1 variant styles */
 .button.button1 {
   background-color: #f2e6d0; /* Default Fill */
+  padding: 0.75em 3.75em; /* Adjust padding: top/bottom is 0.5em, left/right is 2em */
+
 }
 
 .button.button1.hovered {
@@ -25,7 +25,7 @@
 .button-text.button1 {
   color: #60340b; /* Text Fill */
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
   text-decoration: none; /* No underline */
 }
@@ -33,6 +33,8 @@
 /* Button2 variant styles */
 .button.button2 {
   background-color: #ffca61; /* Default Fill */
+  padding: 0.75em 1.25em; /* Adjust padding: top/bottom is 0.5em, left/right is 2em */
+
 }
 
 .button.button2.hovered {
@@ -44,7 +46,7 @@
 .button-text.button2 {
   color: #60340b; /* Text Fill */
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -57,7 +59,7 @@
 .button-text.menu-button {
   color: #60340b; /* Text Fill */
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   text-decoration: none; /* No underline by default */
   transition: all 0.2s ease-in;
@@ -66,35 +68,43 @@
 .button.menu-button.hovered .button-text {
   text-decoration: underline; /* Add underline on hover */
 }
-
-/* email-button variant styles */
+/* Email button variant styles */
 .button.email-button {
   background-color: transparent; /* Transparent background */
   border: 2px solid #775D3E; /* Outline color */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1em 4em; /* Adjust padding: top/bottom is 0.5em, left/right is 2em */
   transition: all 0.2s ease-in;
   cursor: pointer;
+  width: fit-content; /* Ensure it adjusts dynamically */
 }
 
+/* Email button text styles */
 .button-text.email-button {
   color: #775D3E; /* Text color */
   font-family: 'Inter', sans-serif;
-  font-size: 24px; /* Font size */
-  font-weight: bold;
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
   text-decoration: none; /* No underline */
   transition: all 0.2s ease-in;
 }
 
+/* Hover state for email button */
 .button.email-button.hovered {
   background-color: #775D3E; /* Fill color on hover */
-  text-decoration: underline; /* Add underline on hover */
 }
 
 .button.email-button.hovered .button-text {
   color: #F2E6D0; /* Text color on hover */
 }
+
+/* Additional styling to ensure proportional scaling */
+.button.email-button {
+  aspect-ratio: 5 / 1; /* 3 times the width compared to the height */
+}
+
 
 /* sign-up-button variant styles */
 .button.sign-up-button {
@@ -104,13 +114,14 @@
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in;
+  padding: 0.75em 2em; /* Adjust padding: top/bottom is 0.5em, left/right is 2em */
   cursor: pointer;
 }
 
 .button-text.sign-up-button {
   color: #F2E6D0; /* Text color */
   font-family: 'Inter', sans-serif;
-  font-size: 24px; /* Font size */
+  font-size: 14px; /* Font size */
   font-weight: bold;
   text-decoration: none; /* No underline */
   transition: all 0.2s ease-in;
@@ -125,8 +136,6 @@
 .button.sign-up-button.hovered .button-text {
   color: #775D3E; /* Text color changes on hover */
 }
-
-
 
 /* Ignore below, this is for button reference page to quick display */
 /* Specific styles for the Button Reference Page */
@@ -158,7 +167,7 @@
 .button-group p {
   margin-top: 10px;
   font-size: 14px;
-  color: #555;
+  color: #60340b;
 }
 
 /* Code snippet styling */
