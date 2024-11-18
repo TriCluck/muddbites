@@ -3,16 +3,21 @@ import Button from '../components/Button'
 import logo from '../assets/logo/logo.png' // Import the logo correctly
 import './NavBar.css'
 
-import { useNavigate } from 'react-router-dom'
-import routes from '../routes';
+import { useNavigate, Link } from 'react-router-dom'
+import routes from '../routes'
 
 const NavBar = () => {
-  const menu_route = routes.menu; // if we need to change the path for menu change this line 
+  const menu_route = routes.menu // if we need to change the path for menu change this line
+  const signup_route = routes.signup // if we need to change the path for signup change this line
+  const home_route = routes.home // if we need to change the path for home change this line
 
   const navigate = useNavigate()
 
   const [showPopup, setShowPopup] = useState(false)
 
+  const handleSignupClick = () => {
+    navigate(signup_route) // Navigate to the Sign-up page
+  }
   const handleMenuClick = () => {
     navigate(menu_route) // Navigate to the Menu page
   }
@@ -30,7 +35,9 @@ const NavBar = () => {
     <nav className='nav-bar'>
       {/* Logo */}
       <div className='nav-logo'>
-        <img src={logo} alt='Mudd Bites Logo' />
+        <Link to={home_route}>
+          <img src={logo} alt='Mudd Bites Logo' />
+        </Link>
       </div>
 
       {/* Navigation Groups */}
@@ -55,7 +62,11 @@ const NavBar = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <Button text='suggestions' variant='menu-button' />
+            <Button
+              text='suggestions'
+              variant='menu-button'
+              onClick={handleSignupClick}
+            />
           </a>
         </div>
 

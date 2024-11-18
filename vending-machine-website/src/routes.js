@@ -4,6 +4,7 @@
 const routes = {
     home: '/',
     menu: '/menu',
+    signup: '/signup',
     buttonRef: '/buttonref',
   };
   
