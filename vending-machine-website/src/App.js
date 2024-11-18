@@ -4,18 +4,15 @@ import ButtonReference from './reference-pages/ButtonRef'; // Your private page
 import HomePage from './pages/HomePage'; // Your main public page
 import MenuPage from './pages/menu'; // Your default Menu page
 
+import routes from './routes';
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Public route */}
-        <Route path="/" element={<HomePage />} />
-        <Route path="/menu" element={<MenuPage />} />
-
-
-        {/* Private route */}
-        <Route path="/buttonref" element={<ButtonReference />} />
+        <Route path={routes.home} element={<HomePage />} />
+        <Route path={routes.menu} element={<MenuPage />} />
+        <Route path={routes.buttonRef} element={<ButtonReference />} />
       </Routes>
     </Router>
   );
