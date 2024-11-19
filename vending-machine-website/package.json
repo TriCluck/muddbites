@@ -9,7 +9,11 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^4.2.4"
+    "web-vitals": "^4.2.4",
+    "@mui/material": "^6.1.7",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.1",
+    "papaparse": "^5.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
