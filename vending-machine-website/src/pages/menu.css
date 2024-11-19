@@ -1,5 +1,6 @@
 .menu-page {
   padding: 20px;
+  background-color: #f9f1e2; /* Matches design background */
   display: flex;
   flex-direction: column;
   align-items: center;

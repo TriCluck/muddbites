@@ -88,7 +88,7 @@
   flex-direction: column; /* Stack the sections vertically */
   justify-content: space-between; /* Space out the sections from top to bottom */
   align-items: flex-start; /* Align items to the left */
-  gap: 50px; /* Space between sections */
+  gap: 20px; /* Space between sections */
   padding: 0; /* Remove padding */
   height: 100%; /* Ensure the right side takes up full height of the container */
   text-align: right;
