@@ -1,11 +1,12 @@
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Allow cards to adjust */
-  gap: 20px; /* Add spacing between cards */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Flexible grid */
+  gap: 20px; /* Spacing between cards */
   padding: 20px;
-  width: 1000px;
-  height: 600px;
+  max-width: 1000px; /* Optional: Max width for larger screens */
+  margin: 0 auto; /* Center the grid horizontally */
   background-color: #f9db88; /* Matches the second screenshot */
   border-radius: 8px;
-  justify-content: center; /* Center align the grid */
+  justify-content: center;
 }
+
