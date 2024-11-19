@@ -1,0 +1,11 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Allow cards to adjust */
+  gap: 20px; /* Add spacing between cards */
+  padding: 20px;
+  width: 1000px;
+  height: 600px;
+  background-color: #f9db88; /* Matches the second screenshot */
+  border-radius: 8px;
+  justify-content: center; /* Center align the grid */
+}
