@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from '../components/NavBar'; // Import the NavBar component
+// eslint-disable-next-line
 import Button from "../components/Button"; // This has all of the buttons you need
 import '../index.css' // Import the global styles, it has all the fonts pre-loaded
 import Footer from "../components/footer";

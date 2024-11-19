@@ -1,7 +1,55 @@
-.home-page {
-  width: 100vw;
+/* Style for the entire signup page */
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f1e2; /* Matches design background */
 }
-.content-wrapper {
-  z-index: 1; /* Ensures the text stays on top of the background */
-  text-align: center; /* Centers the text horizontally */
+
+/* Style for the content wrapper */
+.signup-content {
+  width: 100%;
+  max-width: 600px; /* Set max width for responsiveness */
+  text-align: center;
+  padding: 20px;
 }
+
+/* Header text style */
+.signup-content h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #60340b; /* Matches the color scheme */
+  margin-bottom: 20px;
+  line-height: 1.5; /* Improves readability */
+}
+
+/* Input fields wrapper */
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adds spacing between inputs */
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.signup-content .button {
+  margin-top: 20px;
+  align-self: center;
+}
+
+/* Footer alignment */
+.signup-page footer {
+  margin-top: 40px;
+}
+
+/* Container for the sign-up button */
+.signup-button-container {
+    width: 35%; /* Set the container width to 1/4 of its parent container */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex; /* Ensure the button aligns properly */
+    justify-content: center; /* Center the button inside the container */
+    align-items: center; /* Center the button vertically if needed */
+  }
