@@ -15,17 +15,19 @@
   border: none; /* Remove default input border */
   background-color: transparent; /* Transparent to match the container */
   font-size: 20px; /* Text size */
+  font-weight: bold; 
   color: #60340b; /* Text color */
   font-family: 'Inter', sans-serif;
   outline: none; /* Remove blue outline on focus */
   text-align: center; /* Center align text */
-  padding: 5px 10px; /* Padding inside the input box */
+  padding: 15px 10px; /* Padding inside the input box */
   box-sizing: border-box;
 }
 
 /* Placeholder styling */
 .text-box-input::placeholder {
   color: #775d3e; /* Correct color for the placeholder text */
-  font-style: bold; /* Optional: italicized placeholder */
-  font-size: 16px; /* Match placeholder font size to design */
+  font-weight: bold; /* Optional: italicized placeholder */
+  font-size: 14px; /* Match placeholder font size to design */
+  text-align: left;
 }
