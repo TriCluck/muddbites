@@ -1,13 +1,140 @@
-.home-page {
-  width: 100vw;
-  height: 500vh; /* Full height of the viewport */
+/* HomePage.css */
 
-  background-image: url('../assets/background.svg'); /* Path to the SVG */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+/* Background container */
+.background-container {
+  width: 100%;
+  height: 500vh; /* Background image will extend over 500vh */
+  background-image: url('../assets/background.svg'); /* Path to the background image */
+  background-size: cover; /* Ensure the background image covers the area */
+  background-position: center; /* Center the background image */
+  z-index: 0; /* Set the z-index to 0 to ensure it's behind other elements */
 }
+
+/* Hero section container with flexbox */
+.hero-section {
+  display: flex;
+  flex-direction: column; /* Stack video and content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Hero section will take up 100vh */
+  z-index: 1; /* Ensure it sits above the background container */
+  overflow: hidden; /* Prevent video from overflowing */
+}
+
+/* Video container (on top of the background image) */
+.video-background {
+  position: absolute; /* Absolute position to sit on top of the background */
+  top: 0; /* Align to the top of the hero section */
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height of the viewport */
+  z-index: 1; /* Video sits above the background image but below the content */
+}
+
+/* Style the video to cover the container */
+.video-background video {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Ensure the video covers the entire div */
+}
+
+/* Content wrapper on top of the video */
 .content-wrapper {
-  z-index: 1; /* Ensures the text stays on top of the background */
-  text-align: center; /* Centers the text horizontally */
+  display: flex;
+  flex-direction: column; /* Stack h1 and h3 vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  position: absolute; /* Position the content on top of the video */
+  top: 24%; /* Position at 24% of the height of the video div */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 2; /* Ensure the content stays on top of both video and background */
+  text-align: center;
+  width: 100%; /* Full width of the video */
+  height: auto;
+  padding: 50px;
+  gap: 70px;
 }
+/* Flex Row Layout for Left and Right Side */
+.flex-row-container {
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  justify-content: space-between; /* Spread items across the width */
+  align-items: stretch; /* Align vertically in the middle */
+  margin-top: 50px; /* Space between hero and flex row section */
+  padding: 40px;
+}
+
+/* Left Side: Centered Image */
+.left-side {
+  flex: 1; /* Take up available space */
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center; /* Center the image vertically */
+  padding-left: 20px; 
+}
+
+.centered-image {
+  width: 80%; /* Adjust width as needed */
+  max-width: 500px; /* Limit the max width */
+  height: auto; /* Keep aspect ratio */
+}
+/* Right Side Column Layout */
+.right-side {
+  flex: 1; /* Take up available space */
+  display: flex;
+  flex-direction: column; /* Stack the sections vertically */
+  justify-content: space-between; /* Space out the sections from top to bottom */
+  align-items: flex-start; /* Align items to the left */
+  gap: 50px; /* Space between sections */
+  padding: 0; /* Remove padding */
+  height: 100%; /* Ensure the right side takes up full height of the container */
+  text-align: right;
+}
+
+/* About Us Section (top of the column) */
+.about-us-section {
+  width: 100%; /* Full width */
+  margin: 0; /* Remove margin */
+}
+
+/* Interest Section for Discounts and Updates (bottom of the column) */
+.interest-section {
+  display: flex;
+  flex-direction: row; /* Align the text and button horizontally */
+  align-items: center; /* Vertically center the content */
+  gap: 15px; /* Space between the text and button */
+  padding: 0; /* Remove padding */
+  margin-top: 0; /* Ensure no extra margin at the top */
+  margin-bottom: 0; /* Ensure no extra margin at the bottom */
+}
+
+.about-us-section h2 {
+  margin-bottom: 60px; /* Adds space between h2 and p */
+}
+.about-us-section p{
+  margin-bottom: 30px; /* Adds space between h2 and p */
+}
+
+/* Next section */
+
+/* Next Section */
+.next-section {
+  margin-top: 350px; /* Gap of 200px from the previous section */
+  text-align: center; /* Center the text */
+  padding: 20px;
+  width: 83.33%; 
+  margin-left: auto; /* Push the section to the right */
+  margin-right: 0; /* Remove margin on the right */
+}
+
+/* Yellow Box Placeholder */
+.yellow-box {
+  width: 100%;
+  height: 200px; /* You can adjust the height as needed */
+  background-color: #FFCA61; /* Yellow color */
+  margin-bottom: 20px; /* Space below the yellow box */
+}
+
