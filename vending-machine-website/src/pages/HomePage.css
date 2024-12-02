@@ -118,8 +118,6 @@
   margin-bottom: 30px; /* Adds space between h2 and p */
 }
 
-/* Next section */
-
 /* Next Section */
 .next-section {
   margin-top: 350px; /* Gap of 200px from the previous section */
@@ -132,9 +130,115 @@
 
 /* Yellow Box Placeholder */
 .yellow-box {
-  width: 100%;
-  height: 200px; /* You can adjust the height as needed */
+  width: 50%;
+  height: 600px; /* You can adjust the height as needed */
   background-color: #FFCA61; /* Yellow color */
+  margin-top: 40px; /*Space above the yellow box*/
   margin-bottom: 20px; /* Space below the yellow box */
+  overflow: hidden; /* Prevent overflowing content */ 
 }
+
+/* for wrapping around our snack offerings */ 
+.card-grid-wrapper {
+  display: flex;
+  justify-content: flex-end; /* Aligns the card grid to the right */
+  width: 100%; /* Ensures the wrapper takes up full width */
+}
+
+/* for making sure everything is aligned even when screen size changes */
+@media (max-width: 768px) { /* For tablets and smaller screens */
+  .yellow-box {
+    width: 100%; /* Make yellow box take full width on smaller screens */
+    height: auto; /* Adjust height to fit content */
+  }
+
+  .next-section {
+    margin-top: 150px; /* Reduce top margin for smaller screens */
+  }
+
+  .card-grid-wrapper {
+    display: block;  /* Stack elements vertically on smaller screens */
+    text-align: center;  /* Optional: Center-align for better responsiveness */
+  }
+
+}
+
+/* Location Section */
+.location-section {
+  display: flex; 
+  flex-direction: row; /* Align the text and button horizontally */ 
+  align-items: center; /* Vertically center the content */ 
+  gap: 15px; /* Space between the text and button */ 
+  padding: 0; /* Remove padding */ 
+  margin-top: 400px; /* Ensure no extra margin at the top */ 
+  margin-bottom: 0px; /*Ensure no extra margin at the bottom */ 
+}
+
+/* Parent container for location-box and overlay */
+.location-box-container {
+  position: relative; /* Ensures child elements are positioned relative to this container */
+  width: 100%; /* Adjust as needed */
+}
+
+/* Location Box */
+.location-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #775D3E;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1000px;
+  min-height: 442px;
+  margin: 0 auto;
+  margin-top: 25px;
+  position: relative; /* Needed to layer the overlay */
+  z-index: 1; /* Ensures it is below the overlay */
+}
+
+/* Overlay */
+.overlay {
+  position: absolute; /* Positions the overlay relative to the .location-box-container */
+  top: 0; /* Adjust to where you want the overlay to start */
+  left: 625px; /* Adjust to where you want the overlay to start */
+  width: 500px; /* Overlay spans the full width of the parent */
+  height: 100%; /* Example height for the overlay */
+  background: #F2E6D0;
+  color: white; /* Text color for overlay content */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center overlay content */
+  border: 1px solid #775D3E;
+  box-sizing: border-box; /* Ensures border is included in the element's width/height */
+  z-index: 2; /* Makes sure the overlay appears above the box */
+}
+
+/* Location Box */
+.location-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px; /* Curved corners */
+  background-color: #775D3E; /* White box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  max-width: 1000px;
+  min-height: 442px; 
+  margin: 0 auto; /* Center the box */
+  margin-top: 25px; 
+  position: relative;
+}
+
+.overlay-photo {
+  position: absolute; /* Keep it positioned relative to the overlay container */
+  top: 10%; /* Maintain padding from the top */
+  left: 10%; /* Maintain padding from the left */
+  width: calc(80%); /* Make it fit the remaining width inside the bounding container */
+  height: calc(80%); /* Make it fit the remaining height inside the bounding container */
+  object-fit: contain; /* Ensure the image scales without distortion */
+  border-radius: 8px; /* Optional: Round corners */
+  z-index: 3; /* Ensure it stays on top of the overlay box */
+}
+
 

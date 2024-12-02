@@ -25,8 +25,8 @@ const MenuPage = () => {
     });
   }, []);
   
-  
 
+  
   return (
     <>
       <NavBar />
