@@ -5,6 +5,7 @@ import './HomePage.css';
 import video from '../assets/video/video.mp4'; // Import the video file
 import Button from '../components/Button';
 import image from '../assets/team_photo.png'; // Import the image file
+import map_image from '../assets/muddbites.jpeg'; // Import the image file
 
 
 import snackofferingsCSV from '../assets/snacks/snackofferings.csv'; // CSV file 
@@ -116,9 +117,7 @@ const HomePage = () => {
               Northwestern University</h4>
               </div>
               <div className="overlay">
-              <img src="mudd.png" className="overlay-photo" />
-            {/* Overlay Content */}
-              Overlay Content
+              <img src={map_image} className="overlay-photo" />
             </div>
           </div>
 

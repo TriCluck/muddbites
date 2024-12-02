@@ -231,12 +231,14 @@
 }
 
 .overlay-photo {
-  position: absolute; /* Position it relative to the overlay container */
-  top: 10%; /* Adjust as needed */
-  left: 10%; /* Adjust as needed */
-  width: 100px; /* Set a width for the image */
-  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Keep it positioned relative to the overlay container */
+  top: 10%; /* Maintain padding from the top */
+  left: 10%; /* Maintain padding from the left */
+  width: calc(80%); /* Make it fit the remaining width inside the bounding container */
+  height: calc(80%); /* Make it fit the remaining height inside the bounding container */
+  object-fit: contain; /* Ensure the image scales without distortion */
   border-radius: 8px; /* Optional: Round corners */
   z-index: 3; /* Ensure it stays on top of the overlay box */
 }
+
 
